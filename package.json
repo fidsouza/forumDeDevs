@@ -9,7 +9,10 @@
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prepare": "husky install",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
-    "test:unit": "npm test -- --watch -c jest-unit-config.js"
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "build": "rimraf ./build && tsc -p tsconfig-build.json",
+    "start:prod": "npm run build && node build/index.js"
+    
   },
   "repository": {
     "type": "git",
