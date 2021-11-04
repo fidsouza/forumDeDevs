@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  node:
+    image: node:lts-slim
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/odddForum/
+    working_dir: /usr/src/odddForum/
+    command: "npm run start:dev"

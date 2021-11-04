@@ -1,3 +1,4 @@
 export default function helloworld() {
-  return "HelloWorld";
+  return "Hello2rld";
 }
+helloworld();
