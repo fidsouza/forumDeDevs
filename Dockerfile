@@ -8,4 +8,4 @@ COPY . .
 
 RUN apt-get update & npm i
 
-CMD [ "bash" ]
+CMD [ "npm","run","start:prod" ]
